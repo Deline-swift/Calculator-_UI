@@ -31,34 +31,17 @@ const factorail = function(n){
     return sum;
 }
 
-     //const sumArray= function(n){
-    //     const sum = n.reduce((acc,n) => acc+n, 0);
-    // return sum;
-   // console.log(n);
-    
-   // }
+const MulArray = function MulArray(arr) {
+    let mul = 1;
+    arr.forEach(number => {
+        mul*= number;
+    });
+    return mul;
+} 
    
     
-    
 
-     
     
-    
-    
-   
-    
-  
-  
-   
-
-
-
-
-const multiply = function(n){
-    return n.reduce((acc,n) => acc*n, 1);
-    
-}
-
 
 
 const choseOperation = document.getElementById("operations");
@@ -132,20 +115,41 @@ sumSubmitbutton.addEventListener("click", function(){
     const num3 = parseInt( Input3,10);
     
 const number = Input3.split(",").map(item => item.trim()).map(Number);
-   
-const selectedOperation = choseOperation;
-
+   console.log(number)
+const selectedOperation = choseOperation.value;
 if(selectedOperation === "Sum"){
-   var result =  SUMarray(num3);
-   return result
+
+   var result =  SUMarray(number);
+   document.getElementById("sumDisplay").value = result
+
 }
 
-document.getElementById("sumDisplay").value = result
    
 
 
 
 })
+
+sumSubmitbutton.addEventListener("click", function(){
+    const Input5 = document.getElementById("num3").value;
+    const num5 = parseInt( Input5,10);
+    
+const number = Input5.split(",").map(item => item.trim()).map(Number);
+   console.log(number)
+const selectedOperation = choseOperation.value;
+if(selectedOperation === "Multiply"){
+    
+    var result = MulArray(number);
+   document.getElementById("sumDisplay").value = result
+
+}
+
+   
+
+
+
+})
+   
 
 
 
