@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../sky8projects/calculator algorithm"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "simple calculator"
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Calculator App</h1>
+<div class="content">
+    <label for="Operation" id="label">Choose An Operation</label>
+   <select id="operations">
+    <option value="first">choose an option</option>
+    <option value="add">Add</option>
+    <option value="Subtract">Subtract</option>
+    <option value="Sum">Sum</option>
+    <option value="Multiply">Multiply</option>
+    <option value="Power">Power</option>
+    <option value="Factorial">Factorial</option>
+   </select>
+
+   <div id="twoFields" hidden >
+    <input type="text" id="num1" placeholder="Enter Your First Number">
+    <input type="text" id="num2" placeholder="Enter Your Second Number">
+    <button id="addSubmitbutton">Calculate</button>
+    <div class="displayAddSubtract">    <input type="text" id="AddDisplay" readonly placeholder="" ></div>
+
+   </div>
+   <div id="oneField" hidden >
+    <input type="text" id="num3" placeholder="Enter Your Numbers, separate by commas.eg 1,2....">
+    <button id="sumSubmitbutton">Calculate</button>
+    <input type="text" id="sumDisplay" readonly placeholder="">
+   
+
+   </div>
+   <div id="Factorial" hidden >
+    <input type="text" id="factorial_num" placeholder="Enter Your Number">
+    <button id="factorialSubmitbutton">Calculate</button>
+    <input type="text" id="FactorailDisplay" readonly placeholder="">
+   
+</div>
+</div>
+    
+</body>
+<script src="/assets/calculator.js"></script>
+</html>
